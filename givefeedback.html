@@ -1,16 +1,106 @@
-# Give Feedback
-
-We appreciate your input! Please use the form below to share your thoughts, suggestions, or report any issues with Loppis.
-
-<form action="https://formspree.io/f/{your-form-id}" method="POST">
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
-  
-  <label for="email">Email:</label><br>
-  <input type="email" id="email" name="_replyto" placeholder="your.email@example.com" required><br><br>
-  
-  <label for="message">Feedback:</label><br>
-  <textarea id="message" name="message" placeholder="Enter your feedback here..." rows="6" required></textarea><br><br>
-  
-  <input type="submit" value="Submit">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Give Feedback</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Base styles for a modern, readable look */
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    /* Centered container with maximum width */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 4px;
+    }
+    /* Section boxes with curved corners */
+    .section {
+      background-color: #fefefe;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    /* Headings style */
+    h1, h2 {
+      color: #222;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.3em;
+      margin-top: 0;
+    }
+    /* Paragraph and list spacing */
+    p, ul {
+      margin: 1em 0;
+    }
+    ul li {
+      margin-bottom: 0.5em;
+    }
+    /* Form element styling */
+    label {
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #0066cc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Give Feedback</h1>
+    
+    <div class="section">
+      <p>
+        We appreciate your input! Please use the form below to share your thoughts, suggestions, or report any issues with Loppis.
+      </p>
+    </div>
+    
+    <div class="section">
+      <form action="https://formspree.io/f/{your-form-id}" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="_replyto" placeholder="your.email@example.com" required><br>
+        
+        <label for="message">Feedback:</label><br>
+        <textarea id="message" name="message" placeholder="Enter your feedback here..." rows="6" required></textarea><br>
+        
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
